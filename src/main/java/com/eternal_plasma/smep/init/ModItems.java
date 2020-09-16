@@ -12,4 +12,6 @@ public class ModItems
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
 	public static final Item SAPPHIRE = new ItemBase("sapphire");
+	public static final Item SAPPHIRE_SHARD = new ItemBase("sapphire_shard");
+	public static final Item SAPPHIRE_RING = new ItemBase("sapphire_ring");
 }
