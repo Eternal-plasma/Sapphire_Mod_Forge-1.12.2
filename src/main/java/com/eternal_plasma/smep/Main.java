@@ -1,7 +1,10 @@
 package com.eternal_plasma.smep;
 
 import com.eternal_plasma.smep.proxy.CommonProxy;
+import com.eternal_plasma.smep.tabs.Modtab;
 import com.eternal_plasma.smep.util.Reference;
+
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -16,7 +19,7 @@ public class Main
     public static Main instance;
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS,serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
-
+    public static final CreativeTabs MODTAB = new Modtab("modtab.png");
     @Mod.EventHandler
     public static void PreInit(FMLPreInitializationEvent event)
     {
